@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ferretería MG | Materiales y Herramientas</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#f5f7fb;color:#333}
+
+header{background:#0f172a;color:white}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 8%;font-size:14px;background:#020617}
+.topbar span{opacity:.9}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%}
+.logo{font-size:22px;font-weight:600}
+.menu a{margin:0 14px;text-decoration:none;color:white;font-weight:500}
+.menu a:hover{color:#38bdf8}
+
+.hero{display:flex;align-items:center;justify-content:space-between;padding:80px 8%;background:linear-gradient(120deg,#0ea5e9,#1e3a8a);color:white}
+.hero-text{max-width:520px}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{opacity:.9}
+.btn{display:inline-block;margin-top:20px;background:#f59e0b;color:black;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600}
+.btn:hover{background:#fbbf24}
+
+.section{padding:70px 8%}
+.section h2{text-align:center;margin-bottom:40px;font-size:30px}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.feature{background:white;padding:25px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);text-align:center}
+.feature h3{margin-top:10px}
+
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:18px}
+.card-body h4{margin:0 0 6px}
+.price{color:#0ea5e9;font-weight:600}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about img{width:100%;border-radius:10px}
+
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.testimonial{background:white;padding:25px;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact form{display:flex;flex-direction:column}
+.contact input,.contact textarea{margin-bottom:12px;padding:12px;border-radius:6px;border:1px solid #ccc}
+.contact button{padding:12px;background:#0ea5e9;border:none;color:white;border-radius:6px;font-weight:600}
+.contact button:hover{background:#0284c7}
+
+footer{background:#020617;color:white;padding:40px 8%;margin-top:40px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}
+.footer-grid h4{margin-bottom:10px}
+footer p{opacity:.8}
+
+@media(max-width:900px){
+.hero{flex-direction:column;text-align:center}
+.about{grid-template-columns:1fr}
+.contact{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="topbar">
+<span>📍 Santa Rosa de Copán, Honduras</span>
+<span>📞 +504 3168-5726</span>
+</div>
+
+<nav>
+<div class="logo" style="display:flex;align-items:center;gap:10px;">
+<span>Ferretería MG</span>
+</div>
+<div class="menu">
+<a href="#inicio">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#clientes">Clientes</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<div class="hero-text">
+<h1>Todo para tu proyecto de construcción</h1>
+<p>Ferretería MG ofrece herramientas, materiales de construcción, pintura, electricidad y fontanería con atención personalizada y precios competitivos.</p>
+<a class="btn" href="#productos">Ver productos</a>
+</div>
+<img src="https://zummar.com/wp-content/uploads/2025/05/Herramientas-para-la-casa-C-1-1024x682-2.jpg" width="420" alt="Herramientas de ferretería">
+</section>
+
+<section class="section">
+<h2>¿Por qué elegirnos?</h2>
+<div class="features">
+<div class="feature">
+<h3>Calidad</h3>
+<p>Trabajamos con productos confiables para garantizar durabilidad y seguridad.</p>
+</div>
+<div class="feature">
+<h3>Precios accesibles</h3>
+<p>Ofrecemos precios competitivos para el mercado local.</p>
+</div>
+<div class="feature">
+<h3>Atención personalizada</h3>
+<p>Asesoramos a nuestros clientes para elegir el producto correcto.</p>
+</div>
+<div class="feature">
+<h3>Variedad</h3>
+<p>Amplio catálogo de herramientas y materiales para construcción.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="productos">
+<h2>Productos destacados</h2>
+<div class="products">
+
+<div class="card">
+<img src="https://redmilh.com/4902-thickbox_default/taladro-voltaje-110-120v.jpg">
+<div class="card-body">
+<h4>Taladro Eléctrico</h4>
+<p>Ideal para trabajos domésticos y profesionales.</p>
+<span class="price">L 1,850</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/71MsPly6kHL._AC_UF894,1000_QL80_.jpg">
+<div class="card-body">
+<h4>Juego de Llaves</h4>
+<p>Juego completo de llaves resistentes.</p>
+<span class="price">L 650</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://www.fierros.com.co/uploads/news-pictures/pphoto-3746.png">
+<div class="card-body">
+<h4>Pintura Acrílica</h4>
+<p>Alta cobertura para interiores y exteriores.</p>
+<span class="price">L 920</span>
+</div>
+</div>
+
+<div class="card">
+<img src="https://www.tubosmonterrey.com.mx/wp-content/uploads/2023/03/3.png">
+<div class="card-body">
+<h4>Tubería PVC</h4>
+<p>Material resistente para instalaciones.</p>
+<span class="price">L 180</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section about" id="nosotros">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFPtq0VP92Esy2Pku7gpu3OhSgSvPI4gtfuA&s" alt="Logo Ferretería MG">
+<div>
+<h2>Sobre Ferretería MG</h2>
+<p>Ferretería MG es una microempresa familiar ubicada en Santa Rosa de Copán dedicada a la comercialización de materiales de construcción, herramientas, productos eléctricos y artículos de fontanería.</p>
+<p>La empresa nació con el objetivo de ofrecer productos de calidad, atención personalizada y precios accesibles para la comunidad.</p>
+<a class="btn" href="#contacto">Contactarnos</a>
+</div>
+</section>
+
+<section class="section" id="clientes">
+<h2>Opiniones de Clientes</h2>
+<div class="testimonials">
+
+<div class="testimonial">
+<p>Excelente atención y buenos precios. Siempre encuentro lo que necesito.</p>
+<strong>— Carlos Martínez</strong>
+</div>
+
+<div class="testimonial">
+<p>Muy buen servicio y asesoría para proyectos de construcción.</p>
+<strong>— Ana López</strong>
+</div>
+
+<div class="testimonial">
+<p>Productos de buena calidad y atención rápida.</p>
+<strong>— José Rivera</strong>
+</div>
+
+</div>
+</section>
+
+<section class="section contact" id="contacto">
+<div>
+<h2>Contáctanos</h2>
+<p><b>Dirección:</b> Barrio Santa Teresa, Santa Rosa de Copán</p>
+<p><b>Teléfono:</b> +504 3168-5726</p>
+<p><b>Email:</b> contacto@ferreteriamg.com</p>
+<p>Horario: Lunes a Sábado 8:00 AM - 6:00 PM</p>
+</div>
+
+<form>
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Correo" required>
+<textarea rows="4" placeholder="Mensaje"></textarea>
+<button>Enviar mensaje</button>
+</form>
+
+</section>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h4>Ferretería MG</h4>
+<p>Materiales y herramientas para construcción, mantenimiento y remodelación.</p>
+</div>
+<div>
+<h4>Enlaces</h4>
+<p>Inicio</p>
+<p>Productos</p>
+<p>Contacto</p>
+</div>
+<div>
+<h4>Redes sociales</h4>
+<p>Facebook</p>
+<p>WhatsApp</p>
+<p>Instagram</p>
+</div>
+</div>
+
+<p style="margin-top:30px;text-align:center">© 2026 Ferretería MG - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
